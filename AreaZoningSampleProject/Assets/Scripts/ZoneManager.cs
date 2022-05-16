@@ -282,6 +282,17 @@ public class ZoneManager : MonoBehaviour
     }
 
     /*
+     * Returns the unique ID of the area that the given Vector2 is contained by, or -1 if the point is not contained by any area.
+     */
+    public int getAreaPointIsIn(Vector2 point)
+    {
+        foreach (Rect r in uf.getAllRects())
+            if (r.Contains(point)) return uf.getRoot(r);
+
+        return -1;
+    }
+
+    /*
      * Returns the total number of grid squares taken up by all of the drawn Rects.
      */
     public int getSizeOfAllRects()

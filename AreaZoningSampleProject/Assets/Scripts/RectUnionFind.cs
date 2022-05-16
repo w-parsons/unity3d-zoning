@@ -101,7 +101,7 @@ public class RectUnionFind
     /*
      * Gets the root of a given Rect.
      */
-    private int getRoot(Rect i)
+    public int getRoot(Rect i)
     {
         return id[i];
     }
