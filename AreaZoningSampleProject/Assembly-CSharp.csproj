@@ -64,12 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\DrawZone.cs" />
-    <Compile Include="Assets\Grid.cs" />
-    <Compile Include="Assets\RectUnionFind.cs" />
-    <Compile Include="Assets\UIManager.cs" />
-    <Compile Include="Assets\ZoneManager.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DrawZone.cs" />
+    <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\Scripts\RectUnionFind.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\ZoneManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -623,58 +623,58 @@
       <HintPath>/Users/williamparsons/Documents/Game Development/Unity Editors/2019.4.1f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/williamparsons/Desktop/326 Lab Work/Etude 3/AreaZoningSampleProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/williamparsons/Desktop/unity3d-zoning/unity3d-zoning/AreaZoningSampleProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
