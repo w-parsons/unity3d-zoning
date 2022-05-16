@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{1CEB86B0-B1BE-2243-146E-B0AE4E4B33F8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UIManager.cs">
+    <Files>
+      <File FileName="Assets/UIManager.cs" Line="38" Column="9" />
+      <File FileName="Assets/Grid.cs" Line="14" Column="37" />
+      <File FileName="Assets/DrawZone.cs" Line="23" Column="23" />
+      <File FileName="Assets/ZoneManager.cs" Line="94" Column="49" />
+      <File FileName="Assets/RectUnionFind.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AreaZoningSampleProject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="UIManager.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d69cfa85-f1f4-4e87-953d-ad7307605cd5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
