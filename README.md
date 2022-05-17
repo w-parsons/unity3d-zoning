@@ -11,6 +11,7 @@ Other features include
 - Drawing zones
 - Deleting zones
 - Preventing overlap of Rects
+- Rect touch/overlap detection based purely on position (no pesky colliders or physics required)
 - Preventing areas being treated as touching when only their corners are contacting each other
 - Counting total Grid squares filled
 - Counting distinct areas
