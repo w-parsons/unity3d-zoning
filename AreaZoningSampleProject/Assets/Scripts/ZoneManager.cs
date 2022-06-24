@@ -70,7 +70,7 @@ public class ZoneManager : MonoBehaviour
                 colors.Add(c);
             }
 
-            createMesh(points, "Temple " + i, c);
+            createMesh(points, "Mesh " + i, c);
             i++;
         }
 
@@ -86,13 +86,14 @@ public class ZoneManager : MonoBehaviour
         GameObject go = new GameObject(name);
         go.transform.parent = transform;
         go.transform.position = new Vector3(0, 0.01f, 0);
+
         MeshFilter mf = go.AddComponent<MeshFilter>();
         MeshRenderer mr = go.AddComponent<MeshRenderer>();
+
         mr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         mr.material = new Material(meshMaterial);
-        Debug.Log(mr.material.color);
         mr.material.SetColor("_BaseColor", col);
-        Debug.Log(mr.material.color);
+
         meshChildren.Add(go);
 
         // Fill vertices and triangles
@@ -140,12 +141,12 @@ public class ZoneManager : MonoBehaviour
         // add rect to union find
         uf.add(r);
 
-        // union with any temples we are touching
+        // union with any rects we are touching
         calculateUnions(r);
 
-        // find any temples we are overlapping and subtract ourselves from them
+        // find any rects we are overlapping and subtract ourselves from them
         foreach (Rect rect in uf.getAllRects())
-            if (areMeshsTouching(rect, r) && rect != r)
+            if (areRectsTouching(rect, r) && rect != r)
             {
                 if (getSizeOfRect(getOverlap(rect, r)) > 0)
                 {
@@ -159,19 +160,19 @@ public class ZoneManager : MonoBehaviour
     }
 
     /*
-     * Removes any meshs that fall in the area of the delete Rect.
+     * Removes any rects that fall in the area of the delete Rect.
      */
-    public void deleteMesh(Rect deleteArea)
+    public void deleteRect(Rect deleteArea)
     {
-        // find any temples we are overlapping and subtract ourselves from them
+        // find any rects we are overlapping and subtract ourselves from them
         foreach (Rect rect in uf.getAllRects())
-            if (areMeshsTouching(rect, deleteArea))
+            if (areRectsTouching(rect, deleteArea))
                 if (getSizeOfRect(getOverlap(rect, deleteArea)) > 0)
                     cutOutOverlap(rect, deleteArea);
 
         // force any Rect affected by the delete operation to recalculate its unions
         foreach(Rect rect in uf.getAllRects())
-            if(areMeshsTouching(rect, deleteArea))
+            if(areRectsTouching(rect, deleteArea))
                 recalculateUnions(uf.getAllRectsInAZone(rect));
     }
 
@@ -205,7 +206,7 @@ public class ZoneManager : MonoBehaviour
     private void calculateUnions(Rect r)
     {
         foreach (Rect rect in uf.getAllRects())
-            if (areMeshsTouching(rect, r) && rect != r)
+            if (areRectsTouching(rect, r) && rect != r)
                 uf.Union(r, rect);
 
         meshesNeedUpdating = true;
@@ -224,7 +225,7 @@ public class ZoneManager : MonoBehaviour
      * Returns whether or not two Rects are touching.
      * Will return true if they are merely touching, or are overlapping.
      */
-    private bool areMeshsTouching(Rect rectA, Rect rectB)
+    private bool areRectsTouching(Rect rectA, Rect rectB)
     {
         // break if we are checking ourself
         if (rectA == rectB) return true;

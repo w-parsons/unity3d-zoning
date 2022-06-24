@@ -120,8 +120,8 @@ public class RectUnionFind
      */
     public void removeUnion(Rect rectToIsolate)
     {
-            id[rectToIsolate] = maxRoot;
-            maxRoot++;
+        id[rectToIsolate] = maxRoot;
+        maxRoot++;
     }
 
     /*

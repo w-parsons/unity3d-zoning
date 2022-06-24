@@ -75,7 +75,7 @@ public class DrawZone : MonoBehaviour
             float h = Vector3.Distance(boxPoints[0], boxPoints[2]);
 
             if (mode == DrawingMode.Draw) ZoneManager.instance.addRect(new Rect(x, y, w, h));
-            else if (mode == DrawingMode.Delete) ZoneManager.instance.deleteMesh(new Rect(x, y, w, h));
+            else if (mode == DrawingMode.Delete) ZoneManager.instance.deleteRect(new Rect(x, y, w, h));
             
             mesh.Clear();
         }
